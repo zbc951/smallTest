@@ -76,7 +76,7 @@ html {
     height: 100%;
     background-color:#0e0f21;
     body{
-        min-width: 1920px;
+        min-width: 1200px;
         height: auto;
         overflow: hidden;
         main {
@@ -204,7 +204,7 @@ html {
             position: absolute;
             top: 0px;
             width: 100%;
-            min-width: 1920px;
+            min-width: 1200px;
             height: 100%;
             background: url('../images/bg.jpg') no-repeat top center;
             z-index: -999;
@@ -255,5 +255,16 @@ html {
         opacity: 0.6;
         top: 20px;
         left: 0px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+        body {
+            min-width: 1920px;
+        }
+        .bg {
+            min-width: 1920px;
+        }
     }
 }

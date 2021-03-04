@@ -85,7 +85,7 @@ html {
   background-color: #0e0f21;
 }
 html body {
-  min-width: 1920px;
+  min-width: 1200px;
   height: auto;
   overflow: hidden;
 }
@@ -230,7 +230,7 @@ html body .bg {
   position: absolute;
   top: 0px;
   width: 100%;
-  min-width: 1920px;
+  min-width: 1200px;
   height: 100%;
   background: url("../images/bg.jpg") no-repeat top center;
   z-index: -999;
@@ -331,5 +331,13 @@ html body .bg {
     opacity: 0.6;
     top: 20px;
     left: 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html body {
+    min-width: 1920px;
+  }
+  html .bg {
+    min-width: 1920px;
   }
 }
