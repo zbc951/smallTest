@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; 
+}
+
+body {
+  line-height: 1; 
+}
+
+ol, ul {
+  list-style: none; 
+}
+
+blockquote, q {
+  quotes: none; 
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; 
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+}
+
+button,input {
+  outline: none;
+}
+
+textarea,
+button,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="password"],
+.input-checkbox {
+  font-family: Microsoft JhengHei;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-tap-highlight-color: transparent; 
+}
+
+/*主體*/
+
+html {
+  font-family: Microsoft JhengHei;
+  width: 100%;
+  min-width: 1100px;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  background: #2d0800;
+}
+.container {
+  position: relative;
+  width: 100%;
+  min-width: 1100px;
+  height: 980px;
+  overflow: hidden;
+}
+.container .login {
+  position: relative;
+  width: 1020px;
+  margin: 0 auto; 
+}
+
+/*logo*/
+
+.container .login .logo {
+  width: 398px;
+  height: 275px;
+  margin: 4% 0 0% 5.5%;
+  background: url(../images/logo.png) no-repeat;
+  background-size: 100%; 
+  position: absolute;
+}
+
+/*input*/
+
+.container .login .input-area {
+  position: absolute;
+  top: 397px;
+  left: 35px;
+}
+.container .login .input-area .login-input {
+  width: 245px;
+  vertical-align: middle;
+  text-align: right; 
+  float: left;
+}
+.container .login .input-area .login-input label input {
+  width: 96%;
+  height: 30px;
+  font-size: 18px;
+  padding-left: 3%;
+  border-radius: 5px;
+  background: #310004;
+  border: solid 1px #ffea9e;
+  color: #fff;
+}
+.container .login .input-area .login-input label input::-webkit-input-placeholder {
+  color: #fff;
+}
+.container .login .input-area .login-input label input:first-of-type {
+  margin: 5px 0 6px 0;
+}
+.container .login .input-area button {
+  width: 137px;
+  height: 77px;
+  border: 1px solid #fff;
+  border-bottom-width: 0px;
+  border-radius: 6px;
+  color: #6a1216;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 6px 0 5px 25px;
+  box-shadow: 0px 3px 7px 1px #000000;
+  background: #d08f28; /* Old browsers */
+  background: -moz-linear-gradient(bottom, #782900 0%, #d08f28 15%, #974e00 30%, #b05c01 37%, #fff7be 73%, #e9ae3a 95%, #b03d01 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, #782900 0%,#d08f28 15%,#974e00 30%,#b05c01 37%,#fff7be 73%,#e9ae3a 95%,#b03d01 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, #782900 0%,#d08f28 15%,#974e00 30%,#b05c01 37%,#fff7be 73%,#e9ae3a 95%,#b03d01 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 3;
+}
+.container .login .input-area button:hover {
+  color: #fff;
+  background: #e9ae3a; /* Old browsers */
+  background: -moz-linear-gradient(bottom, #fff7c4 0%, #e9ae3a 14%, #974e00 52%,#782900 75%,#461800 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, #fff7c4 0%,#e9ae3a 14%,#974e00 52%,#782900 75%,#461800 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, #fff7c4 0%,#e9ae3a 14%,#974e00 52%,#782900 75%,#461800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.container .login .input-area.c {
+top: 310px;
+}
+
+/*按鈕*/
+
+.container .login .btn_area {
+  position: absolute;
+  width: 420px;
+  top: 318px;
+  left: 35px;
+}
+.container .login .btn_area button {
+  width: 193px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px;
+  border-radius: 30px;
+  border: solid 1px #ffffff;
+  border-bottom-width: 0px;
+  color: #6e0000;
+  font-weight: bold;
+  font-size: 21px;
+  box-shadow: 0px 2px 3px 2px #000000a8;
+  cursor: pointer;
+  background: #d08f28; /* Old browsers */
+  background: -moz-linear-gradient(bottom, #782900 0%, #d08f28 15%, #974e00 30%, #b05c01 37%, #fff7c4 73%, #e9ae3a 95%,#b03d01 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, #782900 0%,#d08f28 15%,#974e00 30%,#b05c01 37%,#fff7c4 73%,#e9ae3a 95%,#b03d01 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, #782900 0%,#d08f28 15%,#974e00 30%,#b05c01 37%,#fff7c4 73%,#e9ae3a 95%,#b03d01 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.container .login .btn_area button:hover {
+  color: #fff;
+  border-color: #eebd52;
+  background: #680007; /* Old browsers */
+  background: -moz-linear-gradient(bottom, #ff000f 0%, #680007 67%, #410004 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, #ff000f 0%,#680007 67%,#410004 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, #ff000f 0%,#680007 67%,#410004 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.container .login .newoldPage button.active {
+  color: #fff;
+  border-color: #eebd52;
+  background: #680007; /* Old browsers */
+  background: -moz-linear-gradient(bottom, #ff000f 0%, #680007 67%, #410004 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, #ff000f 0%,#680007 67%,#410004 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, #ff000f 0%,#680007 67%,#410004 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.container .login .btn_area button:last-of-type {
+  margin-left: 4%;
+}
+
+/*圖片*/
+
+.container .coins {
+  width: 790px;
+  height: 601px;
+  position: absolute;
+  top: 0px;
+  right: -130px;
+  background: url(../images/leftImg.png) no-repeat;
+  background-size: 100%;
+  z-index: 1;
+  animation: coins 0.5s ease-out 0s;
+}
+.container .coins2 {
+  width: 534px;
+  height: 441px;
+  position: absolute;
+  top: 34px;
+  right: 28px;
+  background: url(../images/leftImg2.png) no-repeat;
+  background-size: 100%;
+  z-index: 2;
+  animation: coins2 0.5s linear 0s,coins2-1 0.5s ease-out 0.3s;
+}
+
+.container .coins2-1 {
+  opacity: 0;
+  width: 534px;
+  height: 441px;
+  position: absolute;
+  top: 34px;
+  right: 28px;
+  background: url(../images/leftImg2.png) no-repeat;
+  background-size: 100%;
+  z-index: 2;
+  animation: coins2-2 0.8s ease-out 0.7s;
+}
+
+/*背景*/
+
+.container .BG {
+  position: absolute;
+  top: 0;
+  background: url(../images/background.jpg) no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+
+/*動畫*/
+
+@keyframes coins {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: 1;
+  }
+}
+
+@keyframes coins2 {
+  0% {
+    opacity: 0;
+    right: -300px;
+  }
+  100% {
+    opacity: 0;
+    right: -300px;
+  }
+}
+
+@keyframes coins2-1 {
+  0% {
+    opacity: 0;
+    right: -300px;
+  }
+  67% {
+    opacity: 1;
+    right: 90px;
+  }
+  100% {
+    opacity: 1;
+    right: 28px;
+  }
+}
+
+@keyframes coins2-2 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
