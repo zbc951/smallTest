@@ -220,7 +220,7 @@ html {
   background: url(../images/leftImg.png) no-repeat;
   background-size: 100%;
   z-index: 1;
-  animation: coins1 0.3s linear 0s,coins1-2 0.8s ease-out 0.3s;
+  animation: coins1 0.3s linear 0s,coins1-2 0.6s ease-out 0.3s;
 }
 .container .coins2 {
   width: 1175px;
